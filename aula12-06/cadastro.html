@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Cadastro de Usuário</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Cadastro</h1>
     <form>
-        <div class="input-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="input-group">
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required>
-        </div>
+        <label for="cNome">Nome:</label><br>
+        <input type="text" id="cNome" name="nome" placeholder="Seu nome aqui"><br/><br/>
+
+        <label for="cEmail">Email:</label><br>
+        <input type="email" id="cEmail" name="email" placeholder="Seu email aqui" required><br/><br/>
+
+        <label for="cSenha">Senha:</label><br/>
+        <input type="password" id="cSenha" name="senha" placeholder="Sua senha aqui" required/><br/><br/>
+
+        <label for="cTelefone">Telefone:</label><br/>
+        <input type="tel" id="cTelefone" name="telefone" placeholder="Seu telefone aqui"/><br/><br/>
+
+        <label for="cLinkedin">Linkedin:</label><br/>
+        <input type="url" id="cLinkedin" name="Linkedin" placeholder="linkedin.com/in/seu-nome"/><br/><br/>
+
+        <label for="cIdade">Idade:</label><br/>
+        <input type="number" min="0" max="130" id= "cIdade" placeholder="Seu Idade"required><br/><br/>
+
+        <label for="cDataNasc">Data de Nascimento:</label><br/>
+        <input type="date" min="2000-01-01" max="2020-06-12" id= "cDataNasc" name="dataNasc"required/><br/><br/>
+
+        <label>Sua Foto:</label><br/>
+        <input type="file" id= "cFoto" name="foto" accept= ".jpg,.png,.pdf"   placeholder="Seu Foto"/><br/><br/>
+        
         <button type="submit">Cadastrar</button>
     </form>
     <a href="index.html">Voltar para a página inicial</a>
